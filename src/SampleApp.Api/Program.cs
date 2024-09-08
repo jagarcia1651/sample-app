@@ -1,5 +1,3 @@
-using FastEndpoints;
-using FastEndpoints.Swagger;
 using SampleApp.Api;
 using SampleApp.Application;
 using SampleApp.Infrastructure;
@@ -10,6 +8,8 @@ builder.Services
     .AddApplication()
     .AddInfrastructure()
     .AddApi();
+
+builder.WebHost.UseUrls("https://localhost:5001");
 
 WebApplication app = builder.Build();
 

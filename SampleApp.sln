@@ -25,6 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "sample-app-client", "src\sample-app-client\sample-app-client.esproj", "{AB041E7F-9F04-48B9-BC2F-F01885548BE9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E507205F-8994-4E31-87EA-39745BF15A26} = {E507205F-8994-4E31-87EA-39745BF15A26}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +52,12 @@ Global
 		{08FE3B75-ED94-43F8-9212-1AF70DC52E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08FE3B75-ED94-43F8-9212-1AF70DC52E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08FE3B75-ED94-43F8-9212-1AF70DC52E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB041E7F-9F04-48B9-BC2F-F01885548BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB041E7F-9F04-48B9-BC2F-F01885548BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB041E7F-9F04-48B9-BC2F-F01885548BE9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB041E7F-9F04-48B9-BC2F-F01885548BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB041E7F-9F04-48B9-BC2F-F01885548BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB041E7F-9F04-48B9-BC2F-F01885548BE9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +67,7 @@ Global
 		{C96A32A8-46C2-41A7-8572-FBC290A1A703} = {A6331D99-49B3-44F8-86C8-45B2F4AED8F8}
 		{3C688562-F058-4BCD-A5FB-856907C919DC} = {A6331D99-49B3-44F8-86C8-45B2F4AED8F8}
 		{08FE3B75-ED94-43F8-9212-1AF70DC52E96} = {A6331D99-49B3-44F8-86C8-45B2F4AED8F8}
+		{AB041E7F-9F04-48B9-BC2F-F01885548BE9} = {A6331D99-49B3-44F8-86C8-45B2F4AED8F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34811FAE-210B-4F0C-B1DC-32A163F2D11C}

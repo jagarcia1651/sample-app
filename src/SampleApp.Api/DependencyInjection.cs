@@ -14,6 +14,17 @@ public static class DependencyInjection
 
         services.AddMediatR(config => config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AllowLocalhost5000",
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:5000")
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
+                });
+        });
+
         return services;
     }
 
@@ -22,6 +33,8 @@ public static class DependencyInjection
         if (app.Environment.IsDevelopment())
         {
             app.UseFastEndpoints().UseSwaggerGen();
+
+            app.UseCors("AllowLocalhost5000");
         }
 
         return app;
