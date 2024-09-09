@@ -10,7 +10,7 @@ const Customers = () => {
     const [customers, setCustomers] = useState<Customer[]>([]);
     const [loading, setLoading] = useState(true);
 
-    const apiUrl = import.meta.env.VITE_API_URL
+    const apiUrl = "https://localhost:5001/api"
 
     useEffect(() => {
         fetch(`${apiUrl}/abc/customers`)

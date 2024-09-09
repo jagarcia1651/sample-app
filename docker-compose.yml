@@ -1,0 +1,12 @@
+services:
+    sample-app-client:
+        image: ${DOCKER_REGISTRY-}sampleappclient
+        build:
+          context: .
+          dockerfile: src/sample-app-client/Dockerfile
+    sampleapp.api:
+        image: ${DOCKER_REGISTRY-}sampleapp.api
+        build:
+          context: .
+          dockerfile: src/SampleApp.Api/Dockerfile
+

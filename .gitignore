@@ -74,11 +74,6 @@ package-lock.json
 # Logs
 *.log
 
-# Docker
-*.dockerignore
-Dockerfile
-docker-compose.yml
-
 # Temporary files
 *.tmp
 *.temp
@@ -102,6 +97,3 @@ dist/
 # User-specific files
 *.swp
 *.swo
-
-# Exclude all directories named "test"
-test/
