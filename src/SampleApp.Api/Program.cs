@@ -9,8 +9,6 @@ builder.Services
     .AddInfrastructure()
     .AddApi();
 
-builder.WebHost.UseUrls("https://localhost:5001");
-
 WebApplication app = builder.Build();
 
 app.AddApi();

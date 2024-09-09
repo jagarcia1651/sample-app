@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import App from './app.tsx'
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { BrowserRouter as Router } from 'react-router-dom';

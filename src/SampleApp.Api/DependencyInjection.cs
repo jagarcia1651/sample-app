@@ -16,10 +16,10 @@ public static class DependencyInjection
 
         services.AddCors(options =>
         {
-            options.AddPolicy("AllowLocalhost5000",
+            options.AddPolicy("AllowReactApp",
                 builder =>
                 {
-                    builder.WithOrigins("http://localhost:5000")
+                    builder.WithOrigins("http://localhost:8080")
                            .AllowAnyHeader()
                            .AllowAnyMethod();
                 });
@@ -30,12 +30,9 @@ public static class DependencyInjection
 
     public static WebApplication AddApi(this WebApplication app)
     {
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseFastEndpoints().UseSwaggerGen();
+        app.UseFastEndpoints().UseSwaggerGen();
 
-            app.UseCors("AllowLocalhost5000");
-        }
+        app.UseCors("AllowReactApp");
 
         return app;
     }

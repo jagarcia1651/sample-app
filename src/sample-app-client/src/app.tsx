@@ -1,6 +1,6 @@
 import { Button, Container, Typography } from '@mui/material';
 import { Routes, Route, Link } from 'react-router-dom';
-import CustomerList from './Features/Customers/List';
+import CustomerList from './features/customers/list';
 
 function App() {
     return (
